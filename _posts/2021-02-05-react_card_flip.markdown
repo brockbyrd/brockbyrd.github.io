@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "React Card Flip"
-date:       2021-02-05 20:12:56 +0000
+date:       2021-02-05 15:12:57 -0500
 permalink:  react_card_flip
 ---
 
@@ -12,9 +12,9 @@ The package react-card-flipper is a fantastic package that gives you the ability
 
 The top container component will map through your data that you are using throughout your application. You then want to render the child component inside of your map function to create all of the cards needed.
 
-            <div className="flex-container">
+      <div className="flex-container">
 				{this.props.map((item) => <Child item={item} />)}
-            </div>
+      </div>
 
 Create your child component that has local state in that card component so that every card has their own state. The package gives you the prop isFlipped, false to show the front of the card, true to show the back of the card. That prop helps you out tremendously, you want to use this.state to set the isFlipped state in your child component. 
 
@@ -41,8 +41,8 @@ The child component is using the Card Flipper package. So this is where you want
 
 ```
 					<ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
-                        <ChildComponent1 />
-                        <ChildComponent2 />
+              <ChildComponent1 />
+              <ChildComponent2 />
 					</ReactCardFlip>
 ```
 
